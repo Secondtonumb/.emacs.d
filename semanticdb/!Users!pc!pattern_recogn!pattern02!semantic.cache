@@ -1,0 +1,99 @@
+;; Object semanticdb-project-database-file-416a03c8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-416a03c8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-41a7a3b0"
+      :major-mode c-mode
+      :tags 
+        '( ("STDIO_H" variable (:constant-flag t) nil [25 32])
+            ("stdio.h" include (:system-flag t) nil [34 52])
+            ("learning_ptn_num" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116 124]))                  
+                :type "int")
+                nil [95 340])
+            ("get_pattern_type" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [493 503]))                  
+                :type "int")
+                nil [472 549])
+            ("get_pattern_type_1" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [685 695]))                  
+                :type "int")
+                nil [662 741])
+            ("proto_output" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("character_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [930 948])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [949 958]))                  
+                :type "void")
+                nil [912 1175]))          
+      :file "file.h"
+      :pointmax 1184
+      :fsize 1183
+      :lastmodtime '(23280 13092 163325 781000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STDIO_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-4186ff88"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("data_process.h" include nil nil [41 66])
+            ("file.h" include nil nil [67 84])
+            ("sort.h" include nil nil [85 102])
+            ("CLUSTER_NUM" variable (:constant-flag t) nil [280 291])
+            ("CLUSTER_DIC" variable
+               (:dereference 1
+                :default-value "{2, 7, 9}"
+                :type "int")
+                nil [294 325])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [336 345])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [345 358]))                  
+                :type "int")
+                nil [327 3339]))          
+      :file "knn.c"
+      :pointmax 3341
+      :fsize 3340
+      :lastmodtime '(23307 44755 423518 140000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CLUSTER_NUM" . ((number "3" 292 . 293)))
+          )
+)
+    (semanticdb-table "semanticdb-table-404d94d4"
+      :file "data_process.h"
+      :fsize 2195
+      :lastmodtime '(23287 57014 143364 785000))
+    (semanticdb-table "semanticdb-table-404d94f4"
+      :file "sort.h"
+      :fsize 1404
+      :lastmodtime '(23305 9126 514698 796000)))
+  :file "!Users!pc!pattern_recogn!pattern02!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

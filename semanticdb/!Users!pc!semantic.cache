@@ -1,0 +1,93 @@
+;; Object semanticdb-project-database-file-41476e8c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-41476e8c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-41476e4c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("learning_ptn_num" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84 92]))                  
+                :type "int")
+                nil [63 308])
+            ("line" type
+               (:members 
+                  ( ("start" variable (:type "double") (reparse-symbol classsubparts) [334 347])
+                    ("end" variable (:type "double") (reparse-symbol classsubparts) [350 361])
+                    ("cont" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [364 376]))                  
+                :type "struct")
+                nil [311 383])
+            ("Line" type
+               (:typedef ("line" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [311 383])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [394 403])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [404 417]))                  
+                :type "int")
+                nil [385 1094]))          
+      :file "test.c"
+      :pointmax 1097
+      :fsize 1096
+      :lastmodtime '(23414 22096 883486 105000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-41476e6c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("learning_ptn_num" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71 79]))                  
+                :type "int")
+                nil [50 295])
+            ("line" type
+               (:members 
+                  ( ("start" variable (:type "double") (reparse-symbol classsubparts) [320 333])
+                    ("end" variable (:type "double") (reparse-symbol classsubparts) [336 347])
+                    ("cont" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [350 365]))                  
+                :type "struct")
+                nil [297 372])
+            ("Line" type
+               (:typedef ("line" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [297 372])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [383 392])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [393 406]))                  
+                :type "int")
+                nil [374 1406]))          
+      :file "merge.c"
+      :pointmax 1411
+      :fsize 1422
+      :lastmodtime '(23375 64157 631905 396000)
+      :unmatched-syntax nil))
+  :file "!Users!pc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

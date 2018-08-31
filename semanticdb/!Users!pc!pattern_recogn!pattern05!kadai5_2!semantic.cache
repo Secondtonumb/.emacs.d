@@ -1,0 +1,754 @@
+;; Object semanticdb-project-database-file-41ae5e04
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-41ae5e04"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-41a7b8e8"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("Dim" variable (:constant-flag t) nil [67 70])
+            ("Clu" variable (:constant-flag t) nil [81 84])
+            ("evalution.h" include nil nil [89 111])
+            ("data.h" include nil nil [112 129])
+            ("file.h" include nil nil [130 147])
+            ("sort.h" include nil nil [149 166])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [177 186])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [187 200]))                  
+                :type "int")
+                nil [168 1945]))          
+      :file "rec.c"
+      :pointmax 1946
+      :fsize 1945
+      :lastmodtime '(23381 28839 971916 882000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Clu" . ((number "2" 85 . 86)))
+          ("Dim" . ((number "2" 71 . 72)))
+          )
+)
+    (semanticdb-table "semanticdb-table-41ac75d0"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("multi" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [79 90])
+                    ("b" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [91 102])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [103 109]))                  
+                :type "double")
+                nil [66 209])
+            ("judge_max" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [372 383])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [384 390])
+                    ("max_index" variable (:type "int") (reparse-symbol arg-sub-list) [391 405]))                  
+                :type "int")
+                nil [358 657])
+            ("conv" function
+               (:arguments 
+                  ( ("a" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [739 747])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [748 754]))                  
+                :type "int")
+                nil [730 885])
+            ("max_ele_index" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [905 917])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [917 925]))                  
+                :type "int")
+                nil [887 1130])
+            ("judge_low_thre" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1229 1243])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1244 1252])
+                    ("max_index" variable (:type "int") (reparse-symbol arg-sub-list) [1253 1267])
+                    ("thre" variable (:type "double") (reparse-symbol arg-sub-list) [1268 1280]))                  
+                :type "int")
+                nil [1210 1447]))          
+      :file "evalution.h"
+      :pointmax 1448
+      :fsize 1447
+      :lastmodtime '(23367 35638 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-41ac78b8"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("Pattern" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("data" variable
+                             (:pointer 1
+                              :type "double")
+                              (reparse-symbol classsubparts) [78 91])
+                          ("dim" variable (:type "int") (reparse-symbol classsubparts) [114 122])
+                          ("pclass" variable (:type "int") (reparse-symbol classsubparts) [153 164]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [59 177])
+            ("input_pattern" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [198 209])
+                    ("df" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [209 218]))                  
+                :type "void")
+                nil [179 310])
+            ("input_weight" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [330 341])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [342 348])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [349 355])
+                    ("df" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [357 366]))                  
+                :type "void")
+                nil [312 560])
+            ("get_feature" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [579 590])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [591 601]))                  
+                :type "void")
+                nil [562 632])
+            ("data_print" function
+               (:arguments 
+                  ( ("data2print" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [688 708]))                  
+                :type "void")
+                nil [672 824])
+            ("data_malloc" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [991 1002]))                  
+                :type "void")
+                nil [974 1050])
+            ("data_free" function
+               (:arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1167 1178]))                  
+                :type "void")
+                nil [1152 1198]))          
+      :file "data.h"
+      :pointmax 1199
+      :fsize 1198
+      :lastmodtime '(23367 35638 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-41ae0f78"
+      :major-mode c-mode
+      :tags 
+        '( ("STDIO_H" variable (:constant-flag t) nil [25 32])
+            ("stdio.h" include (:system-flag t) nil [34 52])
+            ("string.h" include (:system-flag t) nil [53 72])
+            ("learning_ptn_num" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136 144]))                  
+                :type "int")
+                nil [115 359])
+            ("get_pattern_type" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [382 392]))                  
+                :type "int")
+                nil [361 464]))          
+      :file "file.h"
+      :pointmax 474
+      :fsize 490
+      :lastmodtime '(23367 35638 0 0)
+      :unmatched-syntax '((symbol 473 . 474))
+      :lexical-table 
+        '(("STDIO_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-41ae3458"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("node" type
+               (:members 
+                  ( ("value" variable (:type "double") (reparse-symbol classsubparts) [99 112])
+                    ("index" variable (:type "int") (reparse-symbol classsubparts) [115 125]))                  
+                :type "struct")
+                nil [76 132])
+            ("Node" type
+               (:typedef ("node" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [76 132])
+            ("Stump_" type
+               (:members 
+                  ( ("feat_index" variable (:type "int") (reparse-symbol classsubparts) [159 174])
+                    ("" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [181 187])
+                    ("threshold" variable (:type "double") (reparse-symbol classsubparts) [191 208])
+                    ("importance" variable (:type "double") (reparse-symbol classsubparts) [211 229])
+                    ("mini_gini" variable (:type "double") (reparse-symbol classsubparts) [232 249]))                  
+                :type "struct")
+                nil [134 257])
+            ("Stump" type
+               (:typedef ("Stump_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [134 257])
+            ("samp_node_" type
+               (:members 
+                  ( ("pclass" variable (:type "int") (reparse-symbol classsubparts) [288 299])
+                    ("data" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [302 315])
+                    ("w" variable (:type "double") (reparse-symbol classsubparts) [318 327])
+                    ("cum_w" variable (:type "double") (reparse-symbol classsubparts) [330 343]))                  
+                :type "struct")
+                nil [259 355])
+            ("Samp_Node" type
+               (:typedef ("samp_node_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [259 355])
+            ("comp_array" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [585 599])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [600 614]))                  
+                :type "int")
+                nil [570 689])
+            ("comp_pclass" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [707 721])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [722 736]))                  
+                :type "int")
+                nil [691 805])
+            ("comp_stump" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [822 836])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [837 851]))                  
+                :type "int")
+                nil [807 922])
+            ("comp_sample" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [940 954])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [955 969]))                  
+                :type "int")
+                nil [924 1031])
+            ("comp_double" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1048 1062])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1063 1077]))                  
+                :type "int")
+                nil [1032 1129])
+            ("maxfreq_ele" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1319 1328])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1329 1337])
+                    ("type_dic" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1337 1351])
+                    ("type_len" variable (:type "int") (reparse-symbol arg-sub-list) [1352 1365]))                  
+                :type "int")
+                nil [1303 1907])
+            ("min_ele_index" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1983 1995])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1995 2003]))                  
+                :type "int")
+                nil [1965 2208]))          
+      :file "sort.h"
+      :pointmax 2211
+      :fsize 2210
+      :lastmodtime '(23367 35638 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-41ae53b4"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("Dim" variable (:constant-flag t) nil [67 70])
+            ("Clu" variable (:constant-flag t) nil [81 84])
+            ("evalution.h" include nil nil [89 111])
+            ("data.h" include nil nil [112 129])
+            ("file.h" include nil nil [130 147])
+            ("sort.h" include nil nil [149 166])
+            ("gini_imp" function
+               (:arguments 
+                  ( ("lower" variable (:type "double") (reparse-symbol arg-sub-list) [184 197])
+                    ("upper" variable (:type "double") (reparse-symbol arg-sub-list) [198 211])
+                    ("arr" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [212 222])
+                    ("ptn" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223 236])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [237 243])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [244 253])
+                    ("" variable (:type ("" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [248 254]))                  
+                :type "double")
+                nil [168 795])
+            ("thre_init" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [812 824])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [825 831])
+                    ("lower" variable (:type "double") (reparse-symbol arg-sub-list) [832 845])
+                    ("upper" variable (:type "double") (reparse-symbol arg-sub-list) [846 859]))                  
+                :type "void")
+                nil [797 949])
+            ("func_thre_alt_nums" function
+               (:arguments 
+                  ( ("ptns" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [975 986])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [987 995]))                  
+                :type "int")
+                nil [952 1139])
+            ("judge_class" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1157 1165])
+                    ("ptn" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1166 1179])
+                    ("thre" variable (:type "double") (reparse-symbol arg-sub-list) [1180 1192])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1193 1199]))                  
+                :type "int")
+                nil [1141 2077])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2088 2097])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2098 2111]))                  
+                :type "int")
+                nil [2079 5441]))          
+      :file "cart.c"
+      :pointmax 5442
+      :fsize 5449
+      :lastmodtime '(23381 28714 154748 747000)
+      :unmatched-syntax '((string 5196 . 5246))
+      :lexical-table 
+        '(("Clu" . ((number "2" 85 . 86)))
+          ("Dim" . ((number "2" 71 . 72)))
+          )
+)
+    (semanticdb-table "semanticdb-table-41aea5c0"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("Dim" variable (:constant-flag t) nil [67 70])
+            ("Clu" variable (:constant-flag t) nil [81 84])
+            ("evalution.h" include nil nil [89 111])
+            ("data.h" include nil nil [112 129])
+            ("file.h" include nil nil [130 147])
+            ("sort.h" include nil nil [148 165])
+            ("mt19937ar.h" include nil nil [166 188])
+            ("Samp_Num" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Pattern" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 216])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [217 225])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [226 235])
+                    ("" variable (:type ("" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [230 236]))                  
+                :type "int")
+                nil [190 348])
+            ("resamp" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("Samp_Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [362 375])
+                    ("res" variable (:type ("Samp_Node" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [376 390])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [391 399])
+                    ("rate" variable (:type "double") (reparse-symbol arg-sub-list) [400 412]))                  
+                :type "void")
+                nil [350 716])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [727 736])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [737 750]))                  
+                :type "int")
+                nil [718 3965]))          
+      :file "sampling.c"
+      :pointmax 3966
+      :fsize 3965
+      :lastmodtime '(23381 30147 773910 487000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Clu" . ((number "2" 85 . 86)))
+          ("Dim" . ((number "2" 71 . 72)))
+          )
+)
+    (semanticdb-table "semanticdb-table-41af7010"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("Dim" variable (:constant-flag t) nil [67 70])
+            ("Clu" variable (:constant-flag t) nil [81 84])
+            ("evalution.h" include nil nil [88 110])
+            ("data.h" include nil nil [111 128])
+            ("file.h" include nil nil [129 146])
+            ("sort.h" include nil nil [148 165])
+            ("normalization" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [186 198])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [199 207]))                  
+                :type "void")
+                nil [167 349])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [360 369])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [370 383]))                  
+                :type "int")
+                nil [351 4360]))          
+      :file "adaboost.c"
+      :pointmax 4362
+      :fsize 4451
+      :lastmodtime '(23371 18060 282932 156000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Clu" . ((number "2" 85 . 86)))
+          ("Dim" . ((number "2" 71 . 72)))
+          )
+)
+    (semanticdb-table "semanticdb-table-41afb0a8"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("Dim" variable (:constant-flag t) nil [67 70])
+            ("Clu" variable (:constant-flag t) nil [81 84])
+            ("data.h" include nil nil [88 105])
+            ("file.h" include nil nil [106 123])
+            ("sort.h" include nil nil [124 141])
+            ("reverse" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [155 161]))                  
+                :type "int")
+                nil [143 230])
+            ("judge" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [242 248]))                  
+                :type "int")
+                nil [232 320])
+            ("revert" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [332 338]))                  
+                :type "int")
+                nil [321 410])
+            ("H" function
+               (:arguments 
+                  ( ("p" variable (:type ("Pattern" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [421 431])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("Stump" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [432 441])
+                    ("trees" variable (:type "int") (reparse-symbol arg-sub-list) [442 452])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [453 467]))                  
+                :type "double")
+                nil [412 712])
+            ("sign" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [723 732]))                  
+                :type "int")
+                nil [714 802])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [813 822])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [823 836]))                  
+                :type "int")
+                nil [804 2514]))          
+      :file "strong.c"
+      :pointmax 2515
+      :fsize 2514
+      :lastmodtime '(23371 436 519071 790000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Clu" . ((number "2" 85 . 86)))
+          ("Dim" . ((number "2" 71 . 72)))
+          )
+)
+    (semanticdb-table "semanticdb-table-41aff11c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("Dim" variable (:constant-flag t) nil [67 70])
+            ("Clu" variable (:constant-flag t) nil [81 84])
+            ("data.h" include nil nil [88 105])
+            ("file.h" include nil nil [106 123])
+            ("sort.h" include nil nil [124 141])
+            ("reverse" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [155 161]))                  
+                :type "int")
+                nil [143 230])
+            ("judge" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [242 248]))                  
+                :type "int")
+                nil [232 320])
+            ("revert" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [332 338]))                  
+                :type "int")
+                nil [321 410])
+            ("H" function
+               (:arguments 
+                  ( ("p" variable (:type ("Pattern" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [421 431])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("Stump" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [432 441])
+                    ("trees" variable (:type "int") (reparse-symbol arg-sub-list) [442 452])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [453 467]))                  
+                :type "double")
+                nil [412 712])
+            ("sign" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [723 732]))                  
+                :type "int")
+                nil [714 802])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [813 822])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [823 836]))                  
+                :type "int")
+                nil [804 2554]))          
+      :file "plot.c"
+      :pointmax 2555
+      :fsize 2554
+      :lastmodtime '(23369 61787 12354 30000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Clu" . ((number "2" 85 . 86)))
+          ("Dim" . ((number "2" 71 . 72)))
+          )
+)
+    (semanticdb-table "semanticdb-table-41ae37d4"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2002 2020])
+            ("N" variable (:constant-flag t) nil [2056 2057])
+            ("M" variable (:constant-flag t) nil [2070 2071])
+            ("MATRIX_A" variable (:constant-flag t) nil [2084 2092])
+            ("UPPER_MASK" variable (:constant-flag t) nil [2140 2150])
+            ("LOWER_MASK" variable (:constant-flag t) nil [2204 2214])
+            ("mt" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned long")
+                nil [2260 2287])
+            ("mti" variable
+               (:typemodifiers ("static")
+                :default-value "N+1"
+                :type "int")
+                nil [2326 2345])
+            ("init_genrand" function
+               (:arguments 
+                  ( ("s" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2447 2463]))                  
+                :type "void")
+                nil [2429 2947])
+            ("init_by_array" function
+               (:arguments 
+                  ( ("init_key" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [3135 3160])
+                    ("key_length" variable (:type "int") (reparse-symbol arg-sub-list) [3161 3176]))                  
+                :type "void")
+                nil [3116 3913])
+            ("genrand_int32" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4002 4007]))                  
+                :type "unsigned long")
+                nil [3974 4973])
+            ("genrand_int31" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5053 5058]))                  
+                :type "long")
+                nil [5034 5101])
+            ("genrand_real1" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5179 5184]))                  
+                :type "double")
+                nil [5158 5265])
+            ("genrand_real2" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5343 5348]))                  
+                :type "double")
+                nil [5322 5426])
+            ("genrand_real3" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5504 5509]))                  
+                :type "double")
+                nil [5483 5605])
+            ("genrand_res53" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5691 5696]))                  
+                :type "double")
+                nil [5670 5819]))          
+      :file "mt19937ar.h"
+      :pointmax 5821
+      :fsize 5820
+      :lastmodtime '(23381 30185 966670 988000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("N" . ((number "624" 2058 . 2061)))
+          ("UPPER_MASK" . ((symbol "0x80000000UL" 2151 . 2163)))
+          ("MATRIX_A" . ((symbol "0x9908b0dfUL" 2093 . 2105)))
+          ("LOWER_MASK" . ((symbol "0x7fffffffUL" 2215 . 2227)))
+          ("M" . ((number "397" 2072 . 2075)))
+          )
+))
+  :file "!Users!pc!pattern_recogn!pattern05!kadai5_2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,186 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("limits.h" include (:system-flag t) nil [58 77])
+            ("N" variable (:constant-flag t) nil [87 88])
+            ("P" variable (:constant-flag t) nil [111 112])
+            ("T" variable (:constant-flag t) nil [134 135])
+            ("Stump" type
+               (:members 
+                  ( ("feat_index" variable (:type "int") (reparse-symbol classsubparts) [166 181])
+                    ("threshold" variable (:type "float") (reparse-symbol classsubparts) [193 209])
+                    ("" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [226 232])
+                    ("importance" variable (:type "float") (reparse-symbol classsubparts) [253 270]))                  
+                :type "struct")
+                nil [151 283])
+            ("features" variable
+               (:dereference 2
+                :type "float")
+                nil [295 316])
+            ("labels" variable
+               (:dereference 1
+                :type "int")
+                nil [327 341])
+            ("load_features" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [362 377]))                  
+                :type "void")
+                nil [343 562])
+            ("load_stumps" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [581 596])
+                    ("st" variable
+                       (:pointer 1
+                        :type ("Stump" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [597 614]))                  
+                :type "void")
+                nil [564 860])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [871 880])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [881 894]))                  
+                :type "int")
+                nil [862 1708]))          
+      :file "adaboost_test.c"
+      :pointmax 1709
+      :fsize 2132
+      :lastmodtime '(23363 15431 0 0)
+      :unmatched-syntax '((INT 222 . 225))
+      :lexical-table 
+        '(("N" . ((number "1" 89 . 90)))
+          ("P" . ((number "2" 113 . 114)))
+          ("T" . ((number "5" 136 . 137)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("limits.h" include (:system-flag t) nil [58 77])
+            ("N" variable (:constant-flag t) nil [87 88])
+            ("P" variable (:constant-flag t) nil [111 112])
+            ("Stump" type
+               (:members 
+                  ( ("feat_index" variable (:type "int") (reparse-symbol classsubparts) [142 157])
+                    ("threshold" variable (:type "float") (reparse-symbol classsubparts) [169 185])
+                    ("" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [202 208]))                  
+                :type "struct")
+                nil [127 230])
+            ("features" variable
+               (:dereference 2
+                :type "float")
+                nil [242 263])
+            ("labels" variable
+               (:dereference 1
+                :type "int")
+                nil [274 288])
+            ("indices" variable
+               (:dereference 1
+                :type "int")
+                nil [311 326])
+            ("load_features" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [347 362]))                  
+                :type "void")
+                nil [328 547])
+            ("print_features" function (:type "void") nil [549 683])
+            ("sort" function
+               (:arguments 
+                  ( ("fn" variable (:type "int") (reparse-symbol arg-sub-list) [695 702]))                  
+                :type "void")
+                nil [685 1050])
+            ("check_sorted" function
+               (:arguments 
+                  ( ("fn" variable (:type "int") (reparse-symbol arg-sub-list) [1070 1077]))                  
+                :type "void")
+                nil [1052 1170])
+            ("calc_gini" function
+               (:arguments 
+                  ( ("start" variable (:type "int") (reparse-symbol arg-sub-list) [1188 1198])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1199 1207]))                  
+                :type "float")
+                nil [1172 1553])
+            ("find_threshold" function
+               (:arguments 
+                  ( ("fn" variable (:type "int") (reparse-symbol arg-sub-list) [1575 1582])
+                    ("min_threshold" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1583 1604])
+                    ("min_gini" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1605 1621]))                  
+                :type "void")
+                nil [1555 2406])
+            ("train_stump" function (:type ("Stump" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2408 3078])
+            ("save_stump" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3096 3111])
+                    ("st" variable (:type ("Stump" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [3112 3128]))                  
+                :type "void")
+                nil [3080 3267])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3279 3288])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3289 3302]))                  
+                :type "int")
+                nil [3270 3479]))          
+      :file "stump_train.c"
+      :pointmax 3480
+      :fsize 4423
+      :lastmodtime '(23363 15409 0 0)
+      :unmatched-syntax '((INT 198 . 201))
+      :lexical-table 
+        '(("N" . ((number "8" 89 . 90)))
+          ("P" . ((number "3" 113 . 114)))
+          )
+))
+  :file "!Users!pc!Desktop!KADAI5-SAMPLE!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

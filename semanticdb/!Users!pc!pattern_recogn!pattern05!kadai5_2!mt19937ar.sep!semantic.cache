@@ -1,0 +1,160 @@
+;; Object semanticdb-project-database-file-4108cca8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-4108cca8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-41099a04"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2037 2055])
+            ("mt19937ar.h" include nil nil [2056 2078])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2089 2094]))                  
+                :type "int")
+                nil [2080 2539]))          
+      :file "mtTest.c"
+      :pointmax 2540
+      :fsize 2539
+      :lastmodtime '(17005 42239 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-41099a24"
+      :major-mode c-mode
+      :tags 
+        '( ("init_genrand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2090 2106]))                  
+                :type "void")
+                nil [2072 2107])
+            ("init_by_array" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("init_key" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [2295 2320])
+                    ("key_length" variable (:type "int") (reparse-symbol arg-sub-list) [2321 2336]))                  
+                :type "void")
+                nil [2276 2337])
+            ("genrand_int32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2426 2431]))                  
+                :type "unsigned long")
+                nil [2398 2432])
+            ("genrand_int31" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2512 2517]))                  
+                :type "long")
+                nil [2493 2518])
+            ("genrand_real1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2662 2667]))                  
+                :type "double")
+                nil [2641 2668])
+            ("genrand_real2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2746 2751]))                  
+                :type "double")
+                nil [2725 2752])
+            ("genrand_real3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2830 2835]))                  
+                :type "double")
+                nil [2809 2836])
+            ("genrand_res53" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2922 2927]))                  
+                :type "double")
+                nil [2901 2928]))          
+      :file "mt19937ar.h"
+      :pointmax 2929
+      :fsize 2928
+      :lastmodtime '(17005 42111 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-41099a44"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2089 2107])
+            ("mt19937ar.h" include nil nil [2108 2130])
+            ("N" variable (:constant-flag t) nil [2166 2167])
+            ("M" variable (:constant-flag t) nil [2180 2181])
+            ("MATRIX_A" variable (:constant-flag t) nil [2194 2202])
+            ("UPPER_MASK" variable (:constant-flag t) nil [2250 2260])
+            ("LOWER_MASK" variable (:constant-flag t) nil [2314 2324])
+            ("mt" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned long")
+                nil [2370 2397])
+            ("mti" variable
+               (:typemodifiers ("static")
+                :default-value "N+1"
+                :type "int")
+                nil [2436 2455])
+            ("init_genrand" function
+               (:arguments 
+                  ( ("s" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2557 2573]))                  
+                :type "void")
+                nil [2539 3057])
+            ("init_by_array" function
+               (:arguments 
+                  ( ("init_key" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [3245 3270])
+                    ("key_length" variable (:type "int") (reparse-symbol arg-sub-list) [3271 3286]))                  
+                :type "void")
+                nil [3226 4023])
+            ("genrand_int32" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4112 4117]))                  
+                :type "unsigned long")
+                nil [4084 5083])
+            ("genrand_int31" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5163 5168]))                  
+                :type "long")
+                nil [5144 5211])
+            ("genrand_real1" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5289 5294]))                  
+                :type "double")
+                nil [5268 5375])
+            ("genrand_real2" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5453 5458]))                  
+                :type "double")
+                nil [5432 5536])
+            ("genrand_real3" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5614 5619]))                  
+                :type "double")
+                nil [5593 5715])
+            ("genrand_res53" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5801 5806]))                  
+                :type "double")
+                nil [5780 5929]))          
+      :file "mt19937ar.c"
+      :pointmax 5997
+      :fsize 5996
+      :lastmodtime '(17005 42776 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("N" . ((number "624" 2168 . 2171)))
+          ("UPPER_MASK" . ((symbol "0x80000000UL" 2261 . 2273)))
+          ("MATRIX_A" . ((symbol "0x9908b0dfUL" 2203 . 2215)))
+          ("LOWER_MASK" . ((symbol "0x7fffffffUL" 2325 . 2337)))
+          ("M" . ((number "397" 2182 . 2185)))
+          )
+))
+  :file "!Users!pc!pattern_recogn!pattern05!kadai5_2!mt19937ar.sep!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

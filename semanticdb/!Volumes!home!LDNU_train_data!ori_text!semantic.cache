@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file-41b04be4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-41b04be4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-41b04bf0"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("learning_ptn_num" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83 91]))                  
+                :type "int")
+                nil [62 307])
+            ("line" type
+               (:members 
+                  ( ("start" variable (:type "double") (reparse-symbol classsubparts) [332 345])
+                    ("end" variable (:type "double") (reparse-symbol classsubparts) [348 359])
+                    ("cont" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [362 378]))                  
+                :type "struct")
+                nil [309 385])
+            ("Line" type
+               (:typedef ("line" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [309 385])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [396 405])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [406 419]))                  
+                :type "int")
+                nil [387 1420]))          
+      :file "merge.c"
+      :pointmax 1425
+      :fsize 1424
+      :lastmodtime '(23375 64529 0 0)
+      :unmatched-syntax nil))
+  :file "!Volumes!home!LDNU_train_data!ori_text!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
