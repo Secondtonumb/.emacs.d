@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: import plt
+# key: ipplt
+# --
+
+import matplotlib.pyplot as plt

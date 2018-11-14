@@ -1,4 +1,4 @@
-1;; Elisp 函数快速查找
+;; Elisp 函数快速查找
 (global-set-key (kbd "C-h C-f") 'find-function)
 (global-set-key (kbd "C-h C-v") 'find-variable)
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
@@ -55,7 +55,9 @@
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
  '(package-selected-packages
    (quote
-    (nerdtab netease-music multi-term ppd-sr-speedbar python-mode pyimport elpy ecb company tabbar-ruler python py-autopep8 org2ctex org2blog molokai-theme math-symbol-lists flycheck-irony evil-matchit evil-leader company-irony color-theme auto-correct auto-complete-c-headers ace-window ac-clang))))
+    (json-mode company-statistics origami elscreen imenu-list nerdtab netease-music multi-term ppd-sr-speedbar python-mode pyimport elpy ecb company tabbar-ruler python py-autopep8 org2ctex org2blog molokai-theme math-symbol-lists flycheck-irony evil-matchit evil-leader company-irony color-theme auto-correct auto-complete-c-headers ace-window ac-clang)))
+ '(python-shell-buffer-name "iPython")
+ '(python-shell-interpreter "ipython"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -66,11 +68,6 @@
 ;;company
 (add-hook 'after-init-hook 'global-company-mode)
 (global-set-key (kbd "TAB") 'company-complete)
-
-( require 'package )
-( add-to-list 'package-archives
-             '( "elpy" . "http://jorgenschaefer.github.io/packages/" ) )
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;; begin elpy ;;;;;;;;;;;;;;;;;;;;;;;
 (package-initialize)
@@ -92,14 +89,24 @@
                                   (scroll-up 1)))
 )
 ;; Run C programs directly from within emacs
-(defun execute-c++-program ()
-  (interactive)
-  (defvar foo)
-  (setq foo (concat "g++ " (buffer-name) " && ./a.out" ))
-  (shell-command foo))
+;; (defun execute-c++-program ()
+;;   (interactive)
+;;   (defvar foo)
+;;   (setq foo (concat "g++ " (buffer-name) " && ./a.out" ))
+;;   (shell-command foo))
 
-;;c++ compiler
-(global-set-key (kbd "<f5>") 'execute-c++-program)
+;; ;;c++ compiler
+;; (global-set-key (kbd "<f5>") 'execute-c++-program)
 
 ;; multi-term
 (global-set-key (kbd "C-u") 'multi-term-dedicated-toggle)
+
+;;tab bar
+(global-origami-mode t)
+(global-set-key (kbd "<f6>") 'origami-recursively-toggle-node)
+(global-set-key (kbd "<f7>") 'origami-close-all-nodes)
+(global-set-key (kbd "<f8>") 'origami-open-all-nodes)
+
+;;yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
