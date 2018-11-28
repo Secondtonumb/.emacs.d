@@ -35,6 +35,8 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
 ;; 更改删除功能
 (delete-selection-mode 1)
@@ -55,7 +57,7 @@
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2))
  '(package-selected-packages
    (quote
-    (json-mode company-statistics origami elscreen imenu-list nerdtab netease-music multi-term ppd-sr-speedbar python-mode pyimport elpy ecb company tabbar-ruler python py-autopep8 org2ctex org2blog molokai-theme math-symbol-lists flycheck-irony evil-matchit evil-leader company-irony color-theme auto-correct auto-complete-c-headers ace-window ac-clang)))
+    (markdown-mode+ markdown-preview-mode markdown-mode flymd http-post-simple json-mode company-statistics origami elscreen imenu-list nerdtab netease-music multi-term ppd-sr-speedbar python-mode pyimport elpy ecb company tabbar-ruler python py-autopep8 org2ctex org2blog molokai-theme math-symbol-lists flycheck-irony evil-matchit evil-leader company-irony color-theme auto-correct auto-complete-c-headers ace-window ac-clang)))
  '(python-shell-buffer-name "iPython")
  '(python-shell-interpreter "ipython"))
 (custom-set-faces
@@ -110,3 +112,12 @@
 ;;yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;;flymd
+(defun my-flymd-browser-function (url)
+  (let ((browse-url-browser-function 'browse-url-firefox))
+    (browse-url url)))
+(setq flymd-browser-open-function 'my-flymd-browser-function)
+
+;; markdown-preview
+(setq markdown-command "/home/kevingeng/anaconda3/bin/pandoc")
