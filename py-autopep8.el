@@ -19,7 +19,7 @@
 ;; To customize the behaviour of "autopep8" you can set the
 ;; py-autopep8-options e.g.
 
-;;   (setq py-autopep8-options '("--max-line-length=100"))
+(setq py-autopep8-options '("--max-line-length=100"))
 
 ;;; Code:
 
